@@ -1,0 +1,14 @@
+<h1 class="display-1">Posts</h1>
+<post-creation-form (change)="onPostCreated($event)">
+  
+</post-creation-form>
+<div class="container"
+     *ngFor="let post of posts">
+  <div class="col">
+    <post class="post"
+          title="{{post.title}}"
+          content="{{post.content}}"
+          (change)="onRemovePost($event)">
+    </post>
+  </div>
+</div>
