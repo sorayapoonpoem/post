@@ -12,8 +12,8 @@ export class AppComponent  {
 
   constructor() {
     this.posts = [{
-      'title' : 'testing',
-      'content': 'Bla'
+      'title' : '',
+      'content': ''
     }];
   }
 
